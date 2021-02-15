@@ -1,0 +1,12 @@
+#フォルダを除外
+/_notes/
+/.idea/
+
+#ファイルを除外
+*.bak
+*.log
+*.dat
+.DS_Store
+Thumbs.db
+.settings
+.project
