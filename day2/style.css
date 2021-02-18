@@ -7,9 +7,7 @@ h1 {
 #title {
     font-size: 50px; /* 文字の大きさ */
 }
-.red {
-    background: red;
-}
+
 /* classにCSSをあてる */
 .bg_skyblue {
     background: skyblue;
@@ -44,4 +42,8 @@ h1 {
     background: green;
     color: white;
     font-size: 20px;
+}
+
+.red {
+    background: red;
 }

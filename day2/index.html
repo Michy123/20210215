@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<!DOCTYPE html> <!-- HTML5を使う宣言 -->
+<html lang="en"> <!-- html全体を囲むタグ。絶対必要。閉じタグも必要。 -->
+<head> <!-- 画面に表示されない。SEOや、HTMLファイル自身の特徴を記載する（使ってる文字コードなど）。絶対必要。閉じタグも必要。 -->
+    <meta charset="UTF-8"> <!-- ブラウザが文字化けしないようにするためにUTF-8にエンコードしますよ、という宣言 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Internet Explorer用のおまじない -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- スマホでもきれいに見せられるようにするおまじない -->
+    <title>Document</title> <!-- ブラウザで表示した際、タブに書かれるタイトル。 -->
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css"> <!-- 外部CSSファイルの読み込み -->
 </head>
-<body>
+<body> <!-- 画面に表示される部分。ここにコンテンツ部分のタグを書く。絶対必要。閉じタグも必要。 -->
+
     <!-- h1タグ heading（見出し） -->
     <h1>Hello</h1>
     <h2 id="title">HTMLについて</h2>
 
     <!-- pタグ paragraph（段落） -->
-    <!-- brタグ break（改行） -->
+    <!-- brタグ break（改行）閉じタグ無しバージョン -->
     <p class="bg_skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit<br> Quas suscipit iste blanditiis<br> ut <br>unde<br> quo repellat <br>officiis, non harum nesciunt quisquam molestiae voluptas optio neque dicta delectus pariatur, accusantium quis?</p>
 
     <ol> <!-- olタグ ordered list（連番） -->
@@ -29,7 +30,7 @@
         <li>埼玉</li>
     </ul>
 
-    <!-- aタグ anchor（リンク。錨をおろしてその街（文書）へアクセスするイメージ） -->
+    <!-- aタグ anchor（リンク。錨をおろしてその街（文書）へアクセスするイメージ）hyper reference属性（参照するURL） -->
     <a href="https://nexseed.net/" target="_blank">NexSeed</a>
     <!-- target="_blank" == 別タブで開く -->
 
@@ -40,17 +41,17 @@
 
     <br>
 
-    <!-- 自分のパソコンに入っている画像。index.htmlファイルと同じ階層にある画像 -->
+    <!-- 自分のパソコンに入っている画像を表示。index.htmlファイルと同じ階層にある画像 -->
     <img src="./html.jpg" alt="">
 
     <br>
 
-    <!-- 自分のパソコンに入っている画像。index.htmlファイルと同じ階層にあるimagesフォルダに入っている画像 -->
+    <!-- 自分のパソコンに入っている画像を表示。index.htmlファイルと同じ階層にあるimagesフォルダに入っている画像 -->
     <img src="./images/css.jpg" alt="">
 
     <br>
 
-    <!-- id="title"に向かって遷移することができる。 -->
+    <!-- id="title"に向かって遷移することができる。#（パウンド記号）はidを表す。 -->
     <a href="#title">トップへ戻る</a>
 
     <!-- ブロック要素とインライン要素について -->
@@ -67,7 +68,7 @@
     <br>
     <br>
 
-    <!-- HTMLタグに直接CSSを書く方法 -->
+    <!-- HTMLタグに直接CSSを書く方法（インライン）（読みにくくメンテナンスしにくいので、おすすめしません） -->
     <p>文章のうち、<span style="background: orange;">この部分だけ</span>装飾したい場合はspanタグを使います。</p>
 
     <div class="bg_pink">
@@ -76,7 +77,7 @@
         <p>文章文章文章文章</p>
         <p class="text_blue">文章文章文章文章</p>
     </div>
-    <!-- HTMLファイル内でCSSを書く方法 -->
+    <!-- HTMLファイル内でCSSを書く方法（エンベッド）（別のhtmlで同じcssをあてたいときに使えないので、おすすめしません） -->
     <style>
         .bg_pink {
             background: pink;
@@ -86,8 +87,15 @@
         }
     </style>
 
+    <!-- CSSは別ファイルに書いて、linkタグを使って読み込みましょう！ -->
+
+
+
+
     <br><br><br><br><br>
 
+
+    
 
     <!-- 枠線について -->
     <div class="bordered">枠線</div>
