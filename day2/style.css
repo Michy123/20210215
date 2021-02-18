@@ -1,0 +1,47 @@
+/* タグにCSSをあてる（非推奨） */
+h1 {
+    color: red; /* 文字の色 */
+}
+
+/* idにCSSをあてる（非推奨） */
+#title {
+    font-size: 50px; /* 文字の大きさ */
+}
+.red {
+    background: red;
+}
+/* classにCSSをあてる */
+.bg_skyblue {
+    background: skyblue;
+}
+
+.bordered {
+    background: lightpink;
+    border: 5px red dashed; /* 枠線 */
+    /*
+        border-width: 5px; // 太さ
+        border-color: red; // 色
+        border-style: solid; // 枠線の種類
+
+        solid = 直線
+        double == 日本線
+    */
+}
+
+/*
+    練習問題1
+
+    3つのdivタグの内まんなかのdivタグにclass名green_boxをつけて、下記CSSをあててみましょう。
+    横幅 200px = width
+    高さ 100px = height
+    背景色 緑
+    文字色 白
+    文字の大きさ 20px
+*/
+.green_box {
+    width: 200px;
+    height: 100px;
+    background: green;
+    color: white;
+    font-size: 20px;
+}

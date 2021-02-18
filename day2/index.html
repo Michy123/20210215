@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- h1タグ heading（見出し） -->
+    <h1>Hello</h1>
+    <h2 id="title">HTMLについて</h2>
+
+    <!-- pタグ paragraph（段落） -->
+    <!-- brタグ break（改行） -->
+    <p class="bg_skyblue">Lorem ipsum dolor sit amet consectetur adipisicing elit<br> Quas suscipit iste blanditiis<br> ut <br>unde<br> quo repellat <br>officiis, non harum nesciunt quisquam molestiae voluptas optio neque dicta delectus pariatur, accusantium quis?</p>
+
+    <ol> <!-- olタグ ordered list（連番） -->
+        <li>りんご</li> <!-- liタグ list -->
+        <li>ごりら</li>
+        <li>ライオン</li>
+    </ol>
+
+    <ul> <!-- ulタグ unordered list（箇条書き） -->
+        <li>東京</li>
+        <li>神奈川</li>
+        <li>埼玉</li>
+    </ul>
+
+    <!-- aタグ anchor（リンク。錨をおろしてその街（文書）へアクセスするイメージ） -->
+    <a href="https://nexseed.net/" target="_blank">NexSeed</a>
+    <!-- target="_blank" == 別タブで開く -->
+
+    <br>
+
+    <!-- imgタグ image（画像を表示。src属性には参照するパスかURLを書く。alt属性には本来どんな画像が表示されるかを説明） -->
+    <img src="https://images.unsplash.com/photo-1612831198717-1e71a0d5e2ad?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="ビーチの画像">
+
+    <br>
+
+    <!-- 自分のパソコンに入っている画像。index.htmlファイルと同じ階層にある画像 -->
+    <img src="./html.jpg" alt="">
+
+    <br>
+
+    <!-- 自分のパソコンに入っている画像。index.htmlファイルと同じ階層にあるimagesフォルダに入っている画像 -->
+    <img src="./images/css.jpg" alt="">
+
+    <br>
+
+    <!-- id="title"に向かって遷移することができる。 -->
+    <a href="#title">トップへ戻る</a>
+
+    <!-- ブロック要素とインライン要素について -->
+    <div>divタグ</div> <!-- divタグ division（ひとかたまりを作る時によく使う） -->
+    <div>divタグ</div>
+    <div>divタグ</div>
+    <span>spanタグ</span> <!-- spanタグ（コンテンツの途中で装飾したいときによく使う） -->
+    <span>spanタグ</span>
+    <span>spanタグ</span>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- HTMLタグに直接CSSを書く方法 -->
+    <p>文章のうち、<span style="background: orange;">この部分だけ</span>装飾したい場合はspanタグを使います。</p>
+
+    <div class="bg_pink">
+        <p class="text_blue">文章文章文章文章</p>
+        <p>文章文章文章文章</p>
+        <p>文章文章文章文章</p>
+        <p class="text_blue">文章文章文章文章</p>
+    </div>
+    <!-- HTMLファイル内でCSSを書く方法 -->
+    <style>
+        .bg_pink {
+            background: pink;
+        }
+        .text_blue {
+            color: blue;
+        }
+    </style>
+
+    <br><br><br><br><br>
+
+
+    <!-- 枠線について -->
+    <div class="bordered">枠線</div>
+
+    <br><br><br><br><br>
+
+    <!-- 練習問題1 -->
+    <p class="red">p1</p>
+    <p class="green_box">p2</p>
+    <p>p3</p>
+</body>
+</html>
