@@ -1,0 +1,98 @@
+.bg_yellow_bd {
+    background: lightyellow; /* 背景色 */
+    border: 1px black solid; /* 枠線 */
+}
+
+.bg_pink_bd {
+    background: pink;
+    border: 1px black solid;
+}
+
+.mg_pd {
+    /* 外側の余白（マージンと読む） */
+    /* 上下左右の余白 */
+    margin: 100px;
+
+    /* 上の余白 */
+    /* margin-top: 100px; */
+
+    /* margin-right: 100px; */
+    /* margin-bottom: 100px; */
+    /* margin-left: 100px; */
+
+    /* 上下100px 左右0px */
+    /* margin: 100px 0; */
+
+    /* 上0px 右100px 下300px 左500px */
+    /* margin: 0 100px 300px 500px; */
+
+
+    /* 内側の余白（パディングと読む） */
+    padding: 100px;
+
+    /* 上の余白 */
+    /* padding-top: 100px; */
+
+    /* 右の余白 */
+    /* padding-right: 100px; */
+
+    /* 下の余白 */
+    /* padding-bottom: 100px; */
+
+    /* 左の余白 */
+    /* padding-left: 100px; */
+}
+
+
+.box {
+    /* 横幅（ウィズと読む）100%で親要素の横幅いっぱい */
+    width: 100%;
+    height: 500px;
+    border: 1px black solid;
+
+
+
+    /* flexbox */
+
+    /* flexboxにするために必要なプロパティ */
+    display: flex;
+
+    /* align-items（たて方向を揃える）（アラインと読む） */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+
+    /* justify-content（よこ方向を揃える） */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+
+    /* 子要素を等間隔（端っこはくっつく）（ビトウィーンと読む） */
+    /* justify-content: space-between; */
+
+    /* 子要素を等間隔（端っこは離れる）（アラウンドと読む） */
+    justify-content: space-around;
+
+    /* flex-direction（子要素の並ぶ向き）（ディレクションと読む） */
+    /* flex-direction: row; */
+    flex-direction: column;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+}
+
+.box1 {
+    width: 100%;
+    height: 500px;
+    border: 1px black solid;
+
+    display: flex;
+    /* ここにコードを記述 */
+    align-items: center;
+    justify-content: space-around;
+}
+.item1 {
+    width: 200px;
+    height: 200px;
+    border: 1px black solid;
+}
