@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダー */
+.h1 {
+    background: rgb(6, 39, 66);
+    padding: 14px 40px;
+
+    display: flex;
+    /* メニューを端っこに寄せる */
+    justify-content: space-between;
+    /* 高さまんなか */
+    align-items: center;
+}
+
+.logo {
+    height: 36px;
+}
+
+.nav {
+    display: flex;
+}
+
+/* class名nav直下のlistタグ直下のaタグにCSSをあてる方法 */
+.nav > li > a {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+
+    /* aタグのデフォルトで持つ下線の装飾を消す */
+    text-decoration: none;
+}
+
+
+
+/* メインコンテンツ */
+.welcome {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* vh = view height（ウィンドウの高さマックスが100vh。伸ばしてもコンテンツが見えないのはこのため。） */
+    height: 100vh;
+
+    color: #fff; /* 文字の色 #fff = 白色 */
+
+    display: flex;
+    flex-direction: column;  /* 縦並び */
+    justify-content: center; /* 縦並びのときは縦の余白が変わる */
+    align-items: center;     /* 縦並びのときは横の余白が変わる */
+}

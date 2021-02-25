@@ -43,7 +43,6 @@
     /* padding-left: 100px; */
 }
 
-
 .box {
     /* 横幅（ウィズと読む）100%で親要素の横幅いっぱい */
     width: 100%;
@@ -95,4 +94,43 @@
     width: 200px;
     height: 200px;
     border: 1px black solid;
+}
+
+/* 練習問題 日本国旗 */
+.box2 {
+    width: 500px;
+    height: 300px;
+    border: 1px black solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.item2 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+}
+
+/* 練習問題 イングランド国旗 */
+.england3 {
+    width: 500px;
+    height: 300px;
+    border: 1px black solid;
+
+    display: flex;
+    align-items: center;
+}
+
+.side3 {
+    width: 40%; /* .england3の中で横幅40% */
+    height: 30%; /* .england3の中で高さ30% */
+    background: red;
+}
+
+.center3 {
+    width: 20%; /* .england3の中で横幅20% */
+    height: 100%; /* .england3の中で高さ100% */
+    background: red;
 }
