@@ -1,10 +1,11 @@
+/* すべてのタグに対して */
 * {
     margin: 0;
     padding: 0;
 }
 
 /* ヘッダー */
-.h1 {
+header {
     background: rgb(6, 39, 66);
     padding: 14px 40px;
 
@@ -37,9 +38,13 @@
 
 /* メインコンテンツ */
 .welcome {
+    /* background-image: url("パス");背景画像を指定 */
+    /* style.cssファイルから見て、imgフォルダはひとつ上の階層なので、../を使う */
     background-image: url("../img/background.jpg");
+
     background-size: cover;
-    background-repeat: no-repeat;
+
+    background-repeat: no-repeat; /* 画像を繰り返さない。背景画像に指定した画像が小さい場合、背景が埋まるまで繰り返し表示するのがデフォルト。 */
 
     /* vh = view height（ウィンドウの高さマックスが100vh。伸ばしてもコンテンツが見えないのはこのため。） */
     height: 100vh;
@@ -50,4 +55,62 @@
     flex-direction: column;  /* 縦並び */
     justify-content: center; /* 縦並びのときは縦の余白が変わる */
     align-items: center;     /* 縦並びのときは横の余白が変わる */
+}
+
+
+.title {
+    text-align: center; /* 中央寄せ */
+    font-size: 80px;
+}
+
+.guideline {
+    font-size: 40px;
+    font-weight: bold; /* 文字を太く */
+    text-align: center;
+}
+
+.guideline > li {
+    margin-top: 14px;
+}
+
+#programming, #english {
+    width: 100%;
+}
+
+#programming > h2,
+#english > h2
+{
+    font-size: 40px;
+    text-align: center;
+    color: grey;
+    padding-top: 40px;
+}
+
+.contents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.description {
+    width: 50%;
+}
+
+.contents > img {
+    height: 150px;
+    margin: 0 20px;
+}
+
+
+
+/* フッター */
+footer {
+    background: rgb(6, 39, 66);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+    font-size: 20px;
 }
