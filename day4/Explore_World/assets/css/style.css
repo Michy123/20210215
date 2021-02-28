@@ -1,0 +1,175 @@
+/* すべてのタグに対して */
+* {
+    color: rgb(56, 56, 56);
+}
+
+
+
+/* メイン画像 */
+.top-page {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/hill.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+
+
+/* ヘッダー */
+header {
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+
+.logo {
+    height: 32px;
+}
+
+li {
+    font-size: 20px;
+    float: left;
+    margin-left: 60px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-visual {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-visual h1 {
+    font-size: 120px;
+    color: white;
+    text-align: center;
+}
+
+.main-visual p {
+    font-size: 26px;
+    color: white;
+    width: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+/* メインコンテンツ */
+section {
+    padding: 0 70px;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.about-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.contents-left img{
+    height: 300px;
+}
+
+.contents-right {
+    margin-left: 50px;
+}
+
+.contents-right h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border: 1px solid black;
+    margin: 0 15px;
+    padding: 20px 30px;
+}
+
+/* class名cardの中にあるh2タグすべて */
+.card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact {
+    margin-bottom: 230px;
+}
+
+.contact-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+/* inputタグとtextareaタグ */
+input, textarea {
+    width: 40%;
+    font-size: 23px;
+    margin-bottom: 18px;
+    padding: 3px 12px;
+}
+
+/* inputタグ、textareaタグ、buttonタグ */
+input, textarea, button {
+    border-radius: 5px;
+}
+
+textarea {
+    width: 40%;
+}
+
+button {
+    width: 140px;
+    font-size: 23px;
+    padding: 7px;
+    height: 60px;
+    background-color: #223644;
+    margin-top: 26px;
+    cursor: pointer; /* リンクにマウスを合わせたときのようなポインター */
+    color: white;
+}
+
+
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #223644;
+}
+
+footer p {
+    color: white;
+}
