@@ -1,0 +1,64 @@
+.font {
+    background: blue;
+    color: white;
+
+    /* google font */
+    font-family: 'Shippori Mincho', serif;
+    font-family: 'Stick', sans-serif;
+}
+
+/* レスポンシブデザインについて */
+.responsive {
+    font-size: 50px;
+}
+/* 画面幅576px（スマホ）幅以上は */
+@media screen and (min-width: 576px) {
+    .responsive {
+        font-size: 250px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .responsive {
+        font-size: 500px;
+    }
+}
+
+
+/*
+    補足
+    @media screen ... と書いて、PCサイズでもスマホサイズでもキレイに見せる技術を「メディアクエリ」と言う。
+    CSSが変わるポイントを「ブレークポイント」と言う。
+
+        @media screen and (min-width: 992px) {
+        }
+
+    この場合のブレークポイントは992px。
+*/
+/*
+    練習問題
+
+    モバイルファースト
+    文字色
+        スマホ以上のとき 赤
+        992px以上のとき 青
+        1200px以上のとき ピンク
+*/
+
+/* スマホ以上のとき 赤 */
+.practice {
+    color: red;
+}
+
+/* 992px以上のとき 青 */
+@media screen and (min-width: 992px) {
+    .practice {
+        color: blue;
+    }
+}
+
+/* 1200px以上のとき ピンク */
+@media screen and (min-width: 1200px) {
+    .practice {
+        color: pink;
+    }
+}
